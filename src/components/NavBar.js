@@ -3,7 +3,7 @@ export default function NavBar() {
     <nav className="flex justify-center mt-10">
       <label
         htmlFor="toggle"
-        className="inline-flex gap-5 items-center cursor-pointer bg-background p-1 rounded-3xl"
+        className="inline-flex gap-5 items-center cursor-pointer bg-background p-1 border border-stroke rounded-3xl"
       >
         <input id="toggle" type="checkbox" className="hidden peer bg-red-500" />
         <span className="px-4 py-2 font-medium rounded-3xl bg-white peer-checked:bg-background text-accent_green peer-checked:text-my_gray drop-shadow-xl peer-checked:drop-shadow-none">

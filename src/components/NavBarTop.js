@@ -2,7 +2,7 @@ import { ChevronRightIcon } from "@heroicons/react/24/solid"
 
 export default function NavBarTop() {
   return (
-    <nav className="flex justify-center">
+    <nav className="flex justify-center mt-4">
       <ul className="flex items-center text-small_text_12 text-center">
         <li className="flex items-center text-my_black">
           <span className="mr-1">Αρχική</span>
