@@ -7,6 +7,16 @@
   -moz-osx-font-smoothing: antialiased;
 }
 
+@layer base {
+  html {
+    @apply bg-background;
+  }
+
+  body {
+    @apply 2xl:px-44 xl:px-24 lg:px-6;
+  }
+}
+
 @layer components {
   .btn-primary {
     @apply flex h-12 px-6 py-4 justify-center items-center gap-2 rounded-md border border-solid border-accent_green bg-accent_green text-white;

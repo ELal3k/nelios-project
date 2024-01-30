@@ -1,92 +1,71 @@
+import { ChevronDownIcon } from "@heroicons/react/24/solid"
 import Image from "next/image"
-
+import Card from "@/components/Card"
+import SideBar from "@/components/SideBar"
 export default function Home() {
   return (
-    <main className="flex mt-16 gap-6">
-      <aside className="w-full mt-14 sm:w-60 ">
-        <form className="space-y-8 text-sm">
-          <div className="space-y-2">
-            <h2 className="text-sm font-semibold tracki uppercase dark:text-gray-400">
-              Getting Started
-            </h2>
-            <div className="flex flex-col space-y-1">
-              <a rel="noopener noreferrer" href="#">
-                Installation
-              </a>
-              <a rel="noopener noreferrer" href="#">
-                Plugins
-              </a>
-              <a rel="noopener noreferrer" href="#">
-                Migrations
-              </a>
-              <a rel="noopener noreferrer" href="#">
-                Appearance
-              </a>
-              <a rel="noopener noreferrer" href="#">
-                Mamba UI
-              </a>
-            </div>
+    <main className="flex mt-16 items-start gap-6 self-stretch">
+      <SideBar />
+      <section className="w-full">
+        <div className="flex justify-between items-center">
+          <p>139 διαθέσιμα πακέτα διακοπών</p>
+          <div className="relative">
+            <label htmlFor="pet-select">
+              <select
+                name="choice"
+                className="appearance-none w-36 px-4 py-3 rounded-lg border border-field_border"
+              >
+                <option value="first">First Value</option>
+                <option value="second" selected>
+                  Δημοφιλή
+                </option>
+                <option value="third">Third Value </option>
+              </select>
+              <ChevronDownIcon className="absolute top-[14px] right-1 w-6" />
+            </label>
           </div>
-          <div className="space-y-2">
-            <h2 className="text-sm font-semibold tracki uppercase dark:text-gray-400">
-              Dashboard
-            </h2>
-            <div className="flex flex-col space-y-1">
-              <a rel="noopener noreferrer" href="#">
-                Header
-              </a>
-              <a rel="noopener noreferrer" href="#">
-                Drawer
-              </a>
-              <a rel="noopener noreferrer" href="#">
-                Page Title
-              </a>
-              <a rel="noopener noreferrer" href="#">
-                Menus
-              </a>
-              <a rel="noopener noreferrer" href="#">
-                Sidebar
-              </a>
-              <a rel="noopener noreferrer" href="#">
-                Footer
-              </a>
-            </div>
-          </div>
-          <div className="space-y-2">
-            <h2 className="text-sm font-semibold tracki uppercase dark:text-gray-400">
-              Pages
-            </h2>
-            <div className="flex flex-col space-y-1">
-              <a rel="noopener noreferrer" href="#">
-                Homepage
-              </a>
-              <a rel="noopener noreferrer" href="#">
-                Users
-              </a>
-              <a rel="noopener noreferrer" href="#">
-                Tools
-              </a>
-              <a rel="noopener noreferrer" href="#">
-                Settings
-              </a>
-            </div>
-          </div>
-          <div className="space-y-2">
-            <h2 className="text-sm font-semibold tracki uppercase dark:text-gray-400">
-              Misc
-            </h2>
-            <div className="flex flex-col space-y-1">
-              <a rel="noopener noreferrer" href="#">
-                Tutorials
-              </a>
-              <a rel="noopener noreferrer" href="#">
-                Changelog
-              </a>
-            </div>
-          </div>
-        </form>
-      </aside>
-      <section>section</section>
+        </div>
+        <article className="mt-4">
+          <ul className="grid lg:grid-cols-3 grid-cols-1 gap-8">
+            <li>
+              <Card />
+            </li>
+            <li>
+              <Card />
+            </li>
+            <li>
+              <Card />
+            </li>
+            <li>
+              <Card />
+            </li>
+            <li>
+              <Card />
+            </li>
+            <li>
+              <Card />
+            </li>
+            <li>
+              <Card />
+            </li>
+            <li>
+              <Card />
+            </li>
+            <li>
+              <Card />
+            </li>
+            <li>
+              <Card />
+            </li>{" "}
+            <li>
+              <Card />
+            </li>
+            <li>
+              <Card />
+            </li>
+          </ul>
+        </article>
+      </section>
     </main>
   )
 }

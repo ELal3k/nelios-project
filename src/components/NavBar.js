@@ -16,8 +16,7 @@ export default function NavBar() {
         </span>
       </label>
       <div>
-        {" "}
-        <ul className="grid grid-cols-5 justify-center items-center divide-x divide-stroke bg-background border border-stroke rounded-xl p-2">
+        <ul className="grid grid-cols-5 justify-center items-center divide-x divide-stroke bg-translucent_bg border border-stroke rounded-xl p-2">
           <li className="px-8 py-2 flex flex-col">
             <p className="text-small_text_12 font-medium">Προορισμός</p>
             <p className="text-field_text_14 font-lightplus">Ελλάδα</p>
