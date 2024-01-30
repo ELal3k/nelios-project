@@ -21,4 +21,13 @@
   .btn-primary {
     @apply flex h-12 px-6 py-4 justify-center items-center gap-2 rounded-md border border-solid border-accent_green bg-accent_green text-white;
   }
+
+  input[type="range"]::-webkit-slider-thumb {
+    pointer-events: auto;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    -webkit-appearance: none;
+    @apply bg-accent_blue;
+  }
 }

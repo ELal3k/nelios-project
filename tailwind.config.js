@@ -40,6 +40,9 @@ module.exports = {
         bg_50: "#FFFFFF80",
         text_on_image_faint: "#FFFFFFB2",
       },
+      gridTemplateColumns: {
+        20: "repeat(20, minmax(0, 1fr))",
+      },
     },
   },
   plugins: [],

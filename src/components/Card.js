@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export default function Card() {
   return (
-    <div className="flex flex-col rounded-md bg-white">
+    <div className="flex flex-col rounded-md bg-white backdrop-blur-16">
       <Image
         src="/first-img.jpg"
         style={{
@@ -17,7 +17,7 @@ export default function Card() {
 
       <div className="flex flex-col gap-2 px-6 pb-6 pt-5">
         <p className="text-small_text_12 font-lightplus text-my_gray">
-          2 ημερεσ / 1 νυχτα
+          2 ημέρες / 1 νύχτα
         </p>
         <h2 className="text-h6 font-semibold text-my_black">
           Καλοκαιρι στο KALOGRIA BEACH HOTEL 4* στην Αχαΐα με το Ι.Χ σας
