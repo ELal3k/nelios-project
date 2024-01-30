@@ -2,7 +2,7 @@ import { MagnifyingGlassIcon } from "@heroicons/react/24/solid"
 
 export default function NavBar() {
   return (
-    <nav className="flex flex-col items-center gap-2 justify-center mt-16">
+    <nav className="md:flex hidden flex-col items-center gap-2 justify-center mt-16">
       <label
         htmlFor="toggle"
         className="inline-flex gap-5 items-center cursor-pointer bg-background p-1 border border-stroke rounded-3xl"

@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export default function Card() {
   return (
-    <div className="flex flex-col rounded-md bg-white backdrop-blur-16">
+    <div className="flex flex-col rounded-md bg-white shadow-xl">
       <Image
         src="/first-img.jpg"
         style={{
@@ -12,7 +12,7 @@ export default function Card() {
         }}
         width={500}
         height={500}
-        alt="Picture of the author"
+        alt="Card Picture"
       />
 
       <div className="flex flex-col gap-2 px-6 pb-6 pt-5">

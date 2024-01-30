@@ -1,5 +1,4 @@
 import { ChevronDownIcon } from "@heroicons/react/24/solid"
-import Image from "next/image"
 import CardGrid from "@/components/CardGrid"
 import SideBar from "@/components/SideBar"
 export default function Home() {
@@ -7,7 +6,7 @@ export default function Home() {
     <main className="flex mt-16 items-start gap-6 self-stretch">
       <SideBar />
       <section className="w-full">
-        <article className="flex justify-between items-center">
+        <article className="flex justify-between items-center lg:px-0 px-20">
           <h2>139 διαθέσιμα πακέτα διακοπών</h2>
           <div className="relative">
             <label htmlFor="pet-select">
