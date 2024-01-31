@@ -12,7 +12,7 @@ export default function Footer() {
           <h2 className="uppercase lg:text-h4 sm:text-h6 text-text_on_image font-semibold">
             Δε βρηκατε αυτο που ψαχνετε;
           </h2>
-          <button className="flex justify-center items-center gap-4 sm:h-12 h-8 border border-text_on_image sm:text-button text-small_text_12 text-text_on_image px-6 py-4 rounded-lg">
+          <button className="btn-secondary border-text_on_image text-text_on_image gap-4 sm:h-12 h-8">
             <p>Επικοινωνήστε μαζί μας</p>
             <PaperAirplaneIcon className="h-6 -rotate-45 pb-2" />
           </button>

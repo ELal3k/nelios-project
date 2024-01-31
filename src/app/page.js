@@ -28,7 +28,7 @@ export default function Home() {
           <CardGrid />
           <footer className="flex justify-center mt-6">
             {" "}
-            <button className="flex justify-center items-center h-12 border border-accent_green text-button text-accent_green px-6 py-4 rounded-lg">
+            <button className="btn-secondary border-accent_green text-accent_green">
               Δείτε περισσότερα (127)
             </button>
           </footer>

@@ -22,8 +22,8 @@
     @apply flex h-12 px-6 py-4 justify-center items-center gap-2 rounded-md border border-solid border-accent_green bg-accent_green text-white;
   }
 
-  .btn-primary {
-    @apply flex h-12 px-6 py-4 justify-center items-center gap-2 rounded-md border border-solid border-accent_green bg-accent_green text-white;
+  .btn-secondary {
+    @apply flex justify-center items-center h-12 border text-button px-6 py-4 rounded-lg;
   }
 
   input[type="range"]::-webkit-slider-thumb {
