@@ -1,0 +1,44 @@
+import Slider from "./Slider"
+import Range from "./Range"
+import RangeRadio from "./RangeRadio"
+import Filters from "./Filters"
+import { XMarkIcon } from "@heroicons/react/24/solid"
+
+export default function MobileMenu() {
+  return (
+    <div className="flex justify-center">
+      {" "}
+      <div className="flex flex-col gap-6 p-6 bg-translucent_bg w-80 rounded-xl">
+        <div className="flex justify-between items-center">
+          <h2 className="text-h5 font-semibold text-my_black ">ΦΙΛΤΡΑ</h2>
+          <button className=" bg-translucent_bg drop-shadow-xl p-3 rounded-full">
+            <XMarkIcon className="h-5 text-my_black" />
+          </button>
+        </div>
+
+        <div className="flex flex-col divide-y w-full gap-6">
+          <div className="flex flex-col items-start gap-6 self-stretch">
+            <h3 className="text-h7 text-my_black font-semibold uppercase">
+              Ευρος τιμης
+            </h3>
+            <Range />
+            <Slider />
+            <RangeRadio />
+          </div>
+
+          <div className="flex flex-col items-start gap-6 self-stretch pt-6">
+            <Filters />
+          </div>
+
+          <div className="flex flex-col items-start gap-6 self-stretch pt-6">
+            <Filters />
+          </div>
+
+          <div className=" bg-white p-2 rounded-lg border-2 border-stroke">
+            <button className="btn-primary w-full">Εφαρμογή</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
