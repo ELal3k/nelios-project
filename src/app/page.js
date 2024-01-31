@@ -9,8 +9,9 @@ export default function Home() {
         <article className="flex justify-between items-center lg:px-0 px-20">
           <h2>139 διαθέσιμα πακέτα διακοπών</h2>
           <div className="relative">
-            <label htmlFor="pet-select">
+            <label htmlFor="sldropdown">
               <select
+                id="sldropdown"
                 name="choice"
                 className="appearance-none w-36 px-4 py-3 rounded-lg border border-field_border"
               >
