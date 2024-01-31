@@ -3,6 +3,7 @@ import Header from "@/components/Header"
 import Footer from "@/components/Footer"
 import NavBar from "@/components/NavBar"
 import NavBarTop from "@/components/NavBarTop"
+import { AppWrapper } from "@/context"
 import "./globals.css"
 
 const robotoFlex = Roboto_Flex({ subsets: ["latin", "greek"] })
@@ -16,11 +17,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={robotoFlex.className}>
-        <NavBarTop />
-        <Header />
-        <NavBar />
-        {children}
-        <Footer />
+        <AppWrapper>
+          <NavBarTop />
+          <Header />
+          <NavBar />
+          {children}
+          <Footer />
+        </AppWrapper>
       </body>
     </html>
   )
