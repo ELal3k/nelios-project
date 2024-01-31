@@ -4,10 +4,10 @@ import { createContext, useState, useContext } from "react"
 const AppContext = createContext(undefined)
 
 export function AppWrapper({ children }) {
-  let [name, setName] = useState("alex")
+  let [showFilter, setShowFilter] = useState(false)
 
   return (
-    <AppContext.Provider value={{ name, setName }}>
+    <AppContext.Provider value={{ showFilter, setShowFilter }}>
       {children}
     </AppContext.Provider>
   )

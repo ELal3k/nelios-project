@@ -1,9 +1,7 @@
 "use client"
-import { useAppContext } from "@/context"
 import { ChevronRightIcon } from "@heroicons/react/24/solid"
 
 export default function NavBarTop() {
-  const { name, setName } = useAppContext()
   return (
     <nav className="flex justify-center mt-6">
       <ul className="flex items-center text-small_text_12 text-center">
@@ -19,11 +17,6 @@ export default function NavBarTop() {
           <span className="ml-1">Πακέτα</span>
         </li>
       </ul>
-      <div>{name}</div>
-      <button className="px-5" onClick={() => setName("kevin")}>
-        {" "}
-        change name
-      </button>
     </nav>
   )
 }
