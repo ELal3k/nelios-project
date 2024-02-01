@@ -1,17 +1,24 @@
+"use client"
+
 import Slider from "./Slider"
 import Range from "./Range"
 import RangeRadio from "./RangeRadio"
 import Filters from "./Filters"
+import { useAppContext } from "@/context"
 import { XMarkIcon } from "@heroicons/react/24/solid"
 
 export default function MobileMenu() {
+  const { setShowFilter } = useAppContext()
   return (
-    <div className="flex justify-center">
+    <div className="fixed lg:hidden w-full h-screem flex justify-center backdrop-blur-md z-30">
       {" "}
       <div className="flex flex-col gap-6 p-6 bg-translucent_bg w-80 rounded-xl">
         <div className="flex justify-between items-center">
           <h2 className="text-h5 font-semibold text-my_black ">ΦΙΛΤΡΑ</h2>
-          <button className=" bg-translucent_bg drop-shadow-xl p-3 rounded-full">
+          <button
+            className=" bg-translucent_bg drop-shadow-xl p-3 rounded-full"
+            onClick={() => setShowFilter(false)}
+          >
             <XMarkIcon className="h-5 text-my_black" />
           </button>
         </div>
@@ -24,10 +31,6 @@ export default function MobileMenu() {
             <Range />
             <Slider />
             <RangeRadio />
-          </div>
-
-          <div className="flex flex-col items-start gap-6 self-stretch pt-6">
-            <Filters />
           </div>
 
           <div className="flex flex-col items-start gap-6 self-stretch pt-6">
