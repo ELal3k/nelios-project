@@ -4,7 +4,7 @@ import { createContext, useState, useContext } from "react"
 const AppContext = createContext(undefined)
 
 export function AppWrapper({ children }) {
-  let [showFilter, setShowFilter] = useState(true)
+  let [showFilter, setShowFilter] = useState(false)
 
   return (
     <AppContext.Provider value={{ showFilter, setShowFilter }}>

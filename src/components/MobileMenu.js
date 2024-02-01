@@ -10,9 +10,9 @@ import { XMarkIcon } from "@heroicons/react/24/solid"
 export default function MobileMenu() {
   const { setShowFilter } = useAppContext()
   return (
-    <div className="fixed lg:hidden w-full h-screem flex justify-center backdrop-blur-md z-30">
+    <div className="fixed lg:hidden w-full h-screen flex justify-center backdrop-blur-md z-30">
       {" "}
-      <div className="flex flex-col gap-6 p-6 bg-translucent_bg w-80 rounded-xl">
+      <div className=" fixed flex flex-col gap-6 p-6 bg-translucent_bg w-80 rounded-xl h-full">
         <div className="flex justify-between items-center">
           <h2 className="text-h5 font-semibold text-my_black ">ΦΙΛΤΡΑ</h2>
           <button
