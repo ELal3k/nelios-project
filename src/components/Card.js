@@ -16,13 +16,16 @@ export default function Card({ cardData }) {
         alt="Card Picture"
       />
 
-      <div className="flex flex-col gap-2 px-6 pb-6 pt-5">
-        <p className="text-small_text_12 font-lightplus text-my_gray">
-          {txtSmall}
-        </p>
-        <h2 className="text-h6 font-semibold text-my_black uppercase">
-          {title}
-        </h2>
+      <div className="flex flex-col gap-2 px-6 pb-6 pt-5 h-full justify-between">
+        <div>
+          <p className="text-small_text_12 font-lightplus text-my_gray">
+            {txtSmall}
+          </p>
+          <h2 className="text-h6 font-semibold text-my_black uppercase">
+            {title}
+          </h2>
+        </div>
+
         <div className="flex flex-wrap justify-between items-center">
           <p>
             <span className="text-small_text_12 text-my_black font-semibold">
