@@ -3,7 +3,7 @@ import Image from "next/image"
 export default function Card({ cardData }) {
   const { imageSrc, txtSmall, title, price } = cardData
   return (
-    <div className="flex flex-col rounded-md bg-white shadow-xl">
+    <div className="flex flex-col rounded-md bg-white shadow-xl h-full">
       <Image
         src={imageSrc}
         style={{
@@ -16,7 +16,7 @@ export default function Card({ cardData }) {
         alt="Card Picture"
       />
 
-      <div className="flex flex-col px-6 pb-6 pt-5">
+      <div className="flex flex-col gap-2 px-6 pb-6 pt-5">
         <p className="text-small_text_12 font-lightplus text-my_gray">
           {txtSmall}
         </p>
