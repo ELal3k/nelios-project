@@ -7,10 +7,10 @@ export default function Dropdown() {
         name="choice"
         className="appearance-none w-36 px-4 py-3 rounded-lg border border-field_border"
       >
-        <option value="first">Φθηνότερα</option>
+        <option value="ascending">Φθηνότερα</option>
 
-        <option value="third">Ακριβότερα </option>
-        <option value="second" selected>
+        <option value="descending">Ακριβότερα </option>
+        <option value="default" selected>
           Δημοφιλή
         </option>
       </select>

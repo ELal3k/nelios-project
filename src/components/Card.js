@@ -3,13 +3,13 @@ import Image from "next/image"
 export default function Card({ cardData }) {
   const { imageSrc, txtSmall, title, price } = cardData
   return (
-    <div className="flex flex-col rounded-md bg-white shadow-xl h-full">
+    <div className="flex flex-col rounded-lg bg-white shadow-xl h-full">
       <Image
         src={imageSrc}
         style={{
           width: "100%",
           height: "auto",
-          borderRadius: "12px",
+          borderRadius: "6px",
         }}
         width={500}
         height={500}
