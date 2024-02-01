@@ -122,7 +122,7 @@ export default function Home() {
           </div>
         </article>
         <article className="mt-4">
-          <CardGrid />
+          <CardGrid cardData={cardData} />
           <footer className="flex justify-center mt-6">
             <button className="btn-secondary border-accent_green text-accent_green">
               Δείτε περισσότερα (127)
