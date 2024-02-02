@@ -1,4 +1,17 @@
+"use client"
+import { useAppContext } from "@/context"
+
 export default function Range() {
+  const { minPrice, setMinPrice, maxPrice, setMaxPrice } = useAppContext()
+
+  const handleMinChange = (e) => {
+    setMinPrice(Number(e.target.value))
+  }
+
+  const handleMaxChange = (e) => {
+    setMaxPrice(Number(e.target.value))
+  }
+
   return (
     <form className="flex gap-2 max-w-full">
       <div className="flex flex-col w-1/2">
@@ -10,9 +23,12 @@ export default function Range() {
         </label>
         <input
           name="minInput"
+          type="number"
           id="min"
           placeholder="€"
-          className="px-4 py-3 border border-field_border rounded-lg text-my_black"
+          value={minPrice}
+          onChange={handleMinChange}
+          className="px-4 py-3 border border-field_border rounded-lg text-my_black appearance-none"
         />
       </div>
 
@@ -25,8 +41,11 @@ export default function Range() {
         </label>
         <input
           name="maxInput"
+          type="number"
           id="max"
           placeholder="€"
+          value={maxPrice}
+          onChange={handleMaxChange}
           className="px-4 py-3 border border-field_border rounded-lg text-my_black"
         />
       </div>

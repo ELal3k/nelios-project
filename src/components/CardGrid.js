@@ -2,22 +2,27 @@
 import Card from "@/components/Card"
 import { useAppContext } from "@/context"
 export default function CardGrid({ cardData }) {
-  const { sortPriceOption } = useAppContext()
+  const { sortPriceOption, minPrice, maxPrice } = useAppContext()
 
-  const sortCards = (option) => {
-    if (option === "ascending") {
-      return [...cardData].sort((a, b) => a.price - b.price)
-    } else if (option === "descending") {
-      return [...cardData].sort((a, b) => b.price - a.price)
+  const sortAndFilterCards = () => {
+    let sortedCards = [...cardData]
+
+    if (sortPriceOption === "ascending") {
+      sortedCards = sortedCards.sort((a, b) => a.price - b.price)
+    } else if (sortPriceOption === "descending") {
+      sortedCards = sortedCards.sort((a, b) => b.price - a.price)
     }
-    return cardData
+
+    return sortedCards.filter(
+      (card) => card.price >= minPrice && card.price <= maxPrice
+    )
   }
 
-  const sortedCards = sortCards(sortPriceOption)
+  const sortedAndFilteredCards = sortAndFilterCards()
 
   return (
     <ul className="grid lg:grid-cols-3 lg:mx-0 mx-20 grid-cols-1 gap-8">
-      {sortedCards.map((card) => (
+      {sortedAndFilteredCards.map((card) => (
         <li key={card.id}>
           <Card cardData={card} />
         </li>
